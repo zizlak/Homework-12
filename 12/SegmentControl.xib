@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SegmentControlView" customModule="_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZDq-eX-SWa">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HBL-Oe-oqO">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
+                            <color key="backgroundColor" red="0.35482300100000003" green="0.2492803257" blue="0.79164249009999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="1"/>
+                            <connections>
+                                <action selector="button1:" destination="iN0-l3-epB" eventType="touchUpInside" id="LWP-GK-lY7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SpM-EY-0ZS">
+                            <rect key="frame" x="80" y="0.0" width="80" height="40"/>
+                            <state key="normal" title="2"/>
+                            <connections>
+                                <action selector="buttom2:" destination="iN0-l3-epB" eventType="touchUpInside" id="D0v-OQ-ncC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.59479646889885296" green="1" blue="0.83589154763846607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZDq-eX-SWa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4iZ-UP-zMp"/>
+                <constraint firstAttribute="trailing" secondItem="ZDq-eX-SWa" secondAttribute="trailing" id="Sub-pt-opM"/>
+                <constraint firstItem="ZDq-eX-SWa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z32-K6-0hp"/>
+                <constraint firstAttribute="bottom" secondItem="ZDq-eX-SWa" secondAttribute="bottom" id="rFF-UH-bH7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="stackView" destination="ZDq-eX-SWa" id="oN6-eK-ph7"/>
+            </connections>
+            <point key="canvasLocation" x="-38.405797101449281" y="258.81696428571428"/>
+        </view>
+    </objects>
+</document>
